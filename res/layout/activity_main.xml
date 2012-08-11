@@ -38,6 +38,10 @@
                        style="@style/Urlbar.Button.Reader"
                        android:contentDescription="@string/reader_mode"/>
 
+          <ImageButton android:id="@+id/security"
+                       style="@style/Urlbar.Button.Security"
+                       android:contentDescription="@string/site_security"/>
+        
 		  <ImageButton android:id="@+id/stop"
                        android:contentDescription="@string/stop"
 		               style="@style/Urlbar.Button.Stop"/>

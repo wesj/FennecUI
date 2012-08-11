@@ -12,6 +12,7 @@ import android.graphics.drawable.NinePatchDrawable;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.graphics.Shader;
 
@@ -109,6 +110,9 @@ public class MyLayout extends LinearLayout {
 				return false;
 			}
 		});
+
+		ImageButton sec = (ImageButton)findViewById(R.id.security);
+		sec.setImageLevel(1);
 	}
 
 	public MyLayout(Context context, AttributeSet attrs) {
@@ -130,10 +134,10 @@ public class MyLayout extends LinearLayout {
 
 		int size = 8;
 		if (mUrlTouched) {
-			mUrl2D.setBounds(size+50, size+3, getPosition()-2*size+50, getHeight()-2*size+3);
+			mUrl2D.setBounds(size+5, size+3, getPosition()-2*size+50, getHeight()-2*size+3);
 			mUrl2D.draw(canvas);
 		} else {
-			mUrlD.setBounds(size+50, size+3, getPosition()-2*size+50, getHeight()-2*size+3);
+			mUrlD.setBounds(size+5, size+3, getPosition()-2*size+50, getHeight()-2*size+3);
 			mUrlD.draw(canvas);
 		}
 
