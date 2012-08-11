@@ -1,0 +1,8 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar" />
+    <style name="Urlbar.Button.Menu">
+        <item name="android:visibility">gone</item>
+    </style>
+
+</resources>

@@ -1,0 +1,136 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+    
+    <style name="Urlbar">
+        <item name="android:minHeight">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginBottom">20dp</item>
+    </style>
+    
+    <style name="Urlbar.Button">
+        <item name="android:background">@drawable/urlbar_button</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:minWidth">24dp</item>
+        <item name="android:minHeight">24dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+    
+    <style name="Urlbar.Button.Favicon">
+        <item name="android:src">@drawable/favicon</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    
+    <style name="Urlbar.Button.Back">
+    	<item name="android:layout_width">50dip</item>
+        <item name="android:layout_height">50dip</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:src">@drawable/ic_menu_back</item>
+        <item name="android:contentDescription">@string/back</item>
+        <item name="android:background">@drawable/address_bar_back_button</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+    </style>
+
+    <style name="Urlbar.Button.Forward">
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="Urlbar.Button.Stop">
+        <item name="android:src">@drawable/urlbar_stop</item>
+    </style>
+
+    <style name="Urlbar.Button.Reader">
+        <item name="android:src">@drawable/reader</item>
+    </style>    
+
+    <style name="Urlbar.Button.NewTab">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:src">@drawable/tab_new</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="Urlbar.Button.Refresh">
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="Urlbar.Button.Menu">
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="Urlbar.Textbox">
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginLeft">-15dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingLeft">15dp</item>
+    </style>
+
+    <style name="Urlbar.Textbox.Inner" parent="">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#222222</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- BrowserToolbar -->
+    <style name="BrowserToolbar">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginBottom">20dp</item>
+    </style>
+
+    <!-- Address bar -->
+    <style name="AddressBar">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- Address bar - Button -->
+    <style name="AddressBar.Button">
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!-- Address bar - Image Button -->
+    <style name="AddressBar.ImageButton" parent="AddressBar.Button">
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!-- Address bar - Image Button - Unused -->
+    <style name="AddressBar.ImageButton.Unused">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">0dip</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <!-- Address bar - Image Button - Icon -->
+    <style name="AddressBar.ImageButton.Icon">
+         <item name="android:layout_width">48dp</item>
+         <item name="android:layout_height">48dp</item>
+    </style>
+
+</resources>

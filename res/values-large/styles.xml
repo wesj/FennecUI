@@ -1,0 +1,14 @@
+<resources>
+
+    <style name="Urlbar.Button.Back">
+    	<item name="android:layout_width">50dip</item>
+        <item name="android:layout_height">50dip</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:src">@drawable/ic_menu_back</item>
+        <item name="android:contentDescription">@string/back</item>
+        <item name="android:background">@drawable/address_bar_back_button</item>
+    </style>
+
+</resources>

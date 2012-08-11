@@ -1,0 +1,188 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/main_layout"
+	android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <com.example.androidtest.MyLayout style="@style/Urlbar"
+                                    android:id="@+id/urlbar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+      <ImageButton android:id="@+id/back"
+                   android:contentDescription="@string/back"
+      	           style="@style/Urlbar.Button.Back"/>
+
+	  <ImageButton android:id="@+id/forward"
+                   android:contentDescription="@string/forward"
+	               style="@style/Urlbar.Button.Forward"/>
+
+	  <LinearLayout
+		      android:id="@+id/textbox"
+	      	  style="@style/Urlbar.Textbox"
+	          android:layout_width="wrap_content"
+	          android:layout_weight="1">
+
+          <ImageButton android:id="@+id/favicon"
+                       android:contentDescription="@string/favicon"
+                       style="@style/Urlbar.Button.Favicon"/>
+	      
+		  <Button android:id="@+id/textbox_inner"
+		          style="@style/Urlbar.Textbox.Inner"
+		          android:layout_width="0dp"
+		          android:layout_height="wrap_content"
+		          android:layout_weight="1"
+		          android:hint="@string/awesomebar_default_text"/>
+
+          <ImageButton android:id="@+id/reader"
+                       style="@style/Urlbar.Button.Reader"
+                       android:contentDescription="@string/reader_mode"/>
+
+		  <ImageButton android:id="@+id/stop"
+                       android:contentDescription="@string/stop"
+		               style="@style/Urlbar.Button.Stop"/>
+
+	  </LinearLayout>
+
+	  <ImageButton android:id="@+id/refresh"
+                   android:contentDescription="@string/refresh"
+      	           style="@style/Urlbar.Button.Refresh"/>
+
+	  <ImageButton android:id="@+id/newtab"
+                   android:contentDescription="@string/newtab"
+	               style="@style/Urlbar.Button.NewTab"/>
+
+	  <ImageButton android:id="@+id/menu"
+                   android:contentDescription="@string/menu"
+	               style="@style/Urlbar.Button.Menu"/>
+
+  </com.example.androidtest.MyLayout>
+
+	<LinearLayout android:id="@+id/browser_toolbar"
+	              style="@style/BrowserToolbar">
+	
+	    <RelativeLayout android:id="@+id/address_bar"
+	                    style="@style/AddressBar">
+	
+	        <ImageButton android:id="@+id/back2"
+	                     android:contentDescription="@string/back"
+	                     style="@style/AddressBar.ImageButton.Unused"/>
+	
+	        <ImageButton android:id="@+id/forward2"
+	                     android:contentDescription="@string/forward"
+	                     style="@style/AddressBar.ImageButton.Unused"/>
+	
+	        <LinearLayout android:id="@+id/menu_items"
+	                      android:layout_width="0dip"
+	                      android:layout_height="0dip"
+	                      android:visibility="gone"/>
+	
+	        <View android:id="@+id/curve"
+	              android:layout_width="72dip"
+	              android:layout_height="fill_parent"
+	              android:layout_alignParentRight="true"
+	              android:background="@drawable/address_bar_bg_curve"/>
+	
+	        <View android:layout_width="fill_parent"
+	              android:layout_height="fill_parent"
+	              android:layout_alignParentLeft="true"
+	              android:layout_alignParentBottom="true"
+	              android:layout_toLeftOf="@id/curve"
+	              android:background="@drawable/address_bar_bg"/>
+	
+	        <ImageButton android:id="@+id/menu2"
+	                     style="@style/AddressBar.ImageButton.Unused"/>
+	
+	        <ImageButton android:id="@+id/tabs"
+	                     style="@style/AddressBar.ImageButton"
+	                     android:layout_width="72dip"
+	                     android:layout_alignParentRight="true"
+	                     android:background="@drawable/tabs_crop_button"
+	                     android:gravity="center_vertical"
+	                     android:src="@drawable/tabs_level"
+	                     android:paddingLeft="38dip"
+	                     android:paddingRight="10dip"/>
+	
+	        <TextSwitcher android:id="@+id/tabs_count"
+	                     style="@style/AddressBar.ImageButton"
+	                     android:layout_width="44.5dip"
+	                     android:layout_height="wrap_content"
+	                     android:layout_marginTop="5dp"
+	                     android:layout_alignRight="@id/tabs"
+	                     android:gravity="center_horizontal"/>
+	        
+	        <Button android:id="@+id/awesome_bar"
+	                style="@style/AddressBar.Button"
+	                android:layout_width="fill_parent"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentBottom="true"
+	                android:layout_centerVertical="true"
+	                android:background="@drawable/address_bar_url"
+	                android:singleLine="true"
+	                android:gravity="center_vertical|left"
+	                android:hint="@string/awesomebar_default_text"
+	                android:textColor="#222222"
+	                android:layout_marginTop="4dp"
+	                android:layout_marginBottom="4dp"
+	                android:layout_marginLeft="4dp"
+	                android:layout_marginRight="52dp"
+	                android:paddingLeft="41dip"
+	                android:paddingRight="10dip"/>
+	
+	        <ImageButton android:id="@+id/favicon2"
+	                     style="@style/AddressBar.ImageButton"
+	                     android:layout_width="21.33dip"
+	                     android:layout_height="21.33dip"
+	                     android:layout_marginLeft="10dip"
+	                     android:layout_centerVertical="true"
+	                     android:src="@drawable/favicon"
+	                     android:layout_alignLeft="@id/awesome_bar"/>
+	
+	        <LinearLayout android:layout_width="wrap_content"
+	                      android:layout_height="wrap_content"
+	                      android:layout_centerVertical="true"
+	                      android:layout_alignRight="@id/awesome_bar"
+	                      android:orientation="horizontal">
+	
+	            <ImageButton android:id="@+id/reader"
+	                         style="@style/AddressBar.ImageButton.Icon"
+	                         android:padding="12dip"
+	                         android:src="@drawable/reader"
+	                         android:contentDescription="@string/reader_mode"
+	                         android:visibility="gone"/>
+	
+	            <ImageButton android:id="@+id/site_security"
+	                         style="@style/AddressBar.ImageButton.Icon"
+	                         android:padding="12dip"
+	                         android:src="@drawable/site_security_level"
+	                         android:contentDescription="@string/site_security"
+	                         android:visibility="gone"/>
+	
+	            <ImageButton android:id="@+id/stop2"
+	                         style="@style/AddressBar.ImageButton.Icon"
+	                         android:padding="12dip"
+	                         android:src="@drawable/urlbar_stop"
+	                         android:contentDescription="@string/stop"/>
+	
+	        </LinearLayout>
+	
+	         <ImageView android:id="@+id/shadow2"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="2dp"
+	                    android:layout_alignParentBottom="true"
+	                    android:background="@drawable/address_bar_bg_shadow_repeat"/>
+	
+	    </RelativeLayout>
+	
+	</LinearLayout>
+
+	<Spinner android:id="@+id/size_spinner"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content" />
+
+	<CheckBox android:id="@+id/menu_checkbox"
+	         android:text="Show menu"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content" />
+	
+</LinearLayout>
